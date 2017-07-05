@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal" >
+
+    <TextView
+        android:id="@+id/lblTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="ALERGIAS A FARMACOS"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/txtNdM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnGuardar"
+        android:layout_alignRight="@+id/btnCancelar"
+        android:layout_below="@+id/lblTitulo"
+        android:layout_marginTop="106dp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/lblNdM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtNdM"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="47dp"
+        android:text="Nombre del medicamento:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="280px"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/medicina" />
+
+    <Button
+        android:id="@+id/btnCancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnGuardar"
+        android:layout_alignBottom="@+id/btnGuardar"
+        android:layout_alignRight="@+id/lblTitulo"
+        android:text="Cancelar" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView1"
+        android:layout_alignLeft="@+id/lblTitulo"
+        android:text="Guardar" />
+
+    <TextView
+        android:id="@+id/lblAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblTitulo"
+        android:layout_centerHorizontal="true"
+        android:text="Agregar"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</RelativeLayout>

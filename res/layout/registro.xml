@@ -1,0 +1,249 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:gravity="center_horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="example.emergencias.MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/txtLogo1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/lblNom1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:text="Nombre:" />
+
+        <EditText
+            android:id="@+id/txtNom1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" >
+
+            <requestFocus />
+        </EditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.30" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/lblEdad1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Edad:" />
+
+                        <EditText
+                            android:id="@+id/txtEdad1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="94dp"
+                    android:layout_height="match_parent" >
+
+                    <LinearLayout
+                        android:layout_width="94dp"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/lblSexo1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sexo:" />
+
+                        <EditText
+                            android:id="@+id/txtSexo1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="10" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" >
+
+                    <LinearLayout
+                        android:layout_width="95dp"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/lblPeso1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Peso:" />
+
+                        <EditText
+                            android:id="@+id/txtPeso1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:ems="10" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/lblTdS1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tipo de sangre:" />
+
+            <EditText
+                android:id="@+id/txtTdS1"
+                android:layout_width="168dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.44"
+                android:ems="10" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/lblAaF1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="ALERGIAS A FARMACOS" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" >
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnAdd_Alergias"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Agregar Alergias" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/lblEnf1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="ENFERMEDADES" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" >
+
+                <TextView
+                    android:id="@+id/lblCong1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Congénitas   " />
+
+                <TextView
+                    android:id="@+id/lblCro1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="|   Crónicas   " />
+
+                <TextView
+                    android:id="@+id/lblCar1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="|   Cardiovasculares" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/btnAdd_Con"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:text="Agregar" />
+
+                <Button
+                    android:id="@+id/btnAdd_Cro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:text="Agregar" />
+
+                <Button
+                    android:id="@+id/btnAdd_Car"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25"
+                    android:text="Agregar" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtLogo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/em1"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <Button
+        android:id="@+id/btnGuardar4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_alignParentBottom="true"
+        android:text="Guardar" />
+
+    <Button
+        android:id="@+id/btnCancelar4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/linearLayout1"
+        android:text="Cancelar" />
+
+</RelativeLayout>
